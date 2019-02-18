@@ -47,6 +47,7 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/dad/javaspace/HUD/HUDView.fxml"));
 		loader.setController(this);
+		loader.setRoot(this);
 		try {
 			loader.load();
 		} catch (IOException e) {
@@ -61,7 +62,7 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		 * Bindings
 		 *
 		 ************************************************************/
-		getStylesheets().add("/dad/javaspace/HUD/hud.css");
+		//getStylesheets().add("/dad/javaspace/HUD/hud.css");
 		
 		hpBar.progressProperty().bind(model.hpPropertyProperty());
 		shieldBar.progressProperty().bind(model.shieldPropertyProperty());
