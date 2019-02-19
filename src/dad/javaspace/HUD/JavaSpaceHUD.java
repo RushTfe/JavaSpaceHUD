@@ -14,6 +14,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
+import javafx.scene.text.Text;
 import javafx.util.converter.NumberStringConverter;
 
 public class JavaSpaceHUD extends HBox implements Initializable {
@@ -40,6 +41,9 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 	@FXML
 	private ProgressBar hpBar;
 	
+	@FXML
+	private Text nombreJugador;
+	
 	// Modelo
 	private HUDModel model = new HUDModel();
 
@@ -64,9 +68,10 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		 ************************************************************/
 		//getStylesheets().add("/dad/javaspace/HUD/hud.css");
 		
-		hpBar.progressProperty().bind(model.hpPropertyProperty());
-		shieldBar.progressProperty().bind(model.shieldPropertyProperty());
-		Bindings.bindBidirectional(speedLabel.textProperty(), model.speedPropertyProperty(), new NumberStringConverter());
+		hpBar.progressProperty().bind(model.hpProperty());
+		shieldBar.progressProperty().bind(model.shieldProperty());
+		Bindings.bindBidirectional(speedLabel.textProperty(), model.speedProperty(), new NumberStringConverter());
+		nombreJugador.textProperty().bind(model.nombreJugadorProperty());
 		
 		
 	
