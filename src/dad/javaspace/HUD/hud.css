@@ -1,0 +1,9 @@
+.HBox {
+	-fx-background-color: transparent;
+}
+
+.Label {
+	-fx-font-size: 20px;
+	-fx-font-weight:bold;
+	-fx-font-family:courier;
+}
