@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,6 +19,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import javafx.util.converter.NumberStringConverter;
 
 public class JavaSpaceHUD extends HBox implements Initializable {
@@ -44,6 +49,9 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 	@FXML
 	private Text nombreJugador;
 	
+	// Animación barras de vida
+	private Timeline task;
+	
 	// Modelo
 	private HUDModel model = new HUDModel();
 
@@ -72,12 +80,14 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		shieldBar.progressProperty().bind(model.shieldProperty());
 		Bindings.bindBidirectional(speedLabel.textProperty(), model.speedProperty(), new NumberStringConverter());
 		nombreJugador.textProperty().bind(model.nombreJugadorProperty());
-		
-		
-	
+			
 	}
 
 	public HUDModel getModel() {
 		return model;
+	}
+	
+	public void epezarAnimacion() {
+		task.playFromStart();
 	}
 }
