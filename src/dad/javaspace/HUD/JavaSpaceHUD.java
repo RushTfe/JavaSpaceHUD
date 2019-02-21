@@ -66,7 +66,7 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		 * Bindings
 		 *
 		 ************************************************************/
-		//getStylesheets().add("/dad/javaspace/HUD/hud.css");
+		getStylesheets().add("/dad/javaspace/HUD/hud.css");
 		
 		hpBar.progressProperty().bind(model.hpProperty());
 		shieldBar.progressProperty().bind(model.shieldProperty());

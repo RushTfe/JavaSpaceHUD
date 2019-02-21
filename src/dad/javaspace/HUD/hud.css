@@ -2,8 +2,9 @@
 	-fx-background-color: transparent;
 }
 
-.Label {
-	-fx-font-size: 20px;
+#speedLabel {
+	-fx-font-size: 30px;
+	-fx-font-color: white;
 	-fx-font-weight:bold;
 	-fx-font-family:courier;
 }
