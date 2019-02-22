@@ -1,8 +1,28 @@
-.HBox {
-	-fx-background-color: transparent;
+#rootView {
+	-fx-background-color: rgba(255.0, 255.0, 255.0, 0.1);
 }
 
 
+#nombreJugador {
+	
+	-fx-font-size: 30.0px;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	-fx-font-family:calibri;
+}
+
+.progress-indicator .indicator {
+	-fx-background-color: transparent;
+}
+
+.progress-indicator .percentage {
+	-fx-fill:null;
+}
+
+.progress-indicator {
+	-fx-progress-color:rgba(255, 255, 255, 0.2);
+	-fx-text-fill: transparent;
+}
 
 #speedLabel {
 	-fx-font-size: 30.0px;

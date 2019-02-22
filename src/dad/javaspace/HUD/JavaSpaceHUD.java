@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -47,7 +48,10 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 	private ProgressBar hpBar;
 	
 	@FXML
-	private Text nombreJugador;
+	private Label nombreJugador;
+	
+	@FXML
+	private ProgressIndicator thrustIndicator;
 	
 	// Animación barras de vida
 	private Timeline task;
@@ -80,6 +84,7 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		shieldBar.progressProperty().bind(model.shieldProperty());
 		Bindings.bindBidirectional(speedLabel.textProperty(), model.speedProperty(), new NumberStringConverter());
 		nombreJugador.textProperty().bind(model.nombreJugadorProperty());
+		thrustIndicator.progressProperty().bind(model.thrustProperty());
 			
 	}
 
