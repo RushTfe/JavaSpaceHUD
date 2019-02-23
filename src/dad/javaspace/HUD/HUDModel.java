@@ -20,7 +20,7 @@ public class HUDModel {
 		thrust = new SimpleDoubleProperty(this, "thrust", 0.0);
 		shield = new SimpleDoubleProperty(this, "shield", 1.0);
 		hp = new SimpleDoubleProperty(this, "hp", 1.0);
-		regenerador = new SimpleDoubleProperty(this, "regenerador", 1.0);
+		regenerador = new SimpleDoubleProperty(this, "regenerador", 0.0);
 		nombreJugador = new SimpleStringProperty(this, "nombreJugador");
 	}
 
