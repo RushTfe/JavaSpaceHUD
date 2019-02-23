@@ -48,8 +48,11 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 	private ProgressBar hpBar;
 	
 	@FXML
-	private Label nombreJugador;
+	private ProgressBar regeneradorBar;
 	
+	@FXML
+	private Label nombreJugador;
+
 	@FXML
 	private ProgressIndicator thrustIndicator;
 	

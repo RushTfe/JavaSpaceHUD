@@ -12,6 +12,7 @@ public class HUDModel {
 	private DoubleProperty thrust;
 	private DoubleProperty shield;
 	private DoubleProperty hp;
+	private DoubleProperty regenerador;
 	private StringProperty nombreJugador;
 
 	public HUDModel() {
@@ -19,6 +20,7 @@ public class HUDModel {
 		thrust = new SimpleDoubleProperty(this, "thrust", 0.0);
 		shield = new SimpleDoubleProperty(this, "shield", 1.0);
 		hp = new SimpleDoubleProperty(this, "hp", 1.0);
+		regenerador = new SimpleDoubleProperty(this, "regenerador", 0.0);
 		nombreJugador = new SimpleStringProperty(this, "nombreJugador");
 	}
 
@@ -80,6 +82,18 @@ public class HUDModel {
 
 	public final void setThrust(final double thrust) {
 		this.thrustProperty().set(thrust);
+	}
+
+	public final DoubleProperty regeneradorProperty() {
+		return this.regenerador;
+	}
+
+	public final double getRegenerador() {
+		return this.regeneradorProperty().get();
+	}
+
+	public final void setRegenerador(final double regenerador) {
+		this.regeneradorProperty().set(regenerador);
 	}
 
 }

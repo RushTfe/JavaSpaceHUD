@@ -19,11 +19,12 @@
             <Insets />
          </HBox.margin>
       </StackPane>
-      <VBox fx:id="vBoxRoot" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="301.0" spacing="25.0" HBox.hgrow="ALWAYS">
+      <VBox fx:id="vBoxRoot" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="301.0" spacing="10.0" HBox.hgrow="ALWAYS">
          <children>
             <Label fx:id="nombreJugador" text="NombreJugador" />
             <ProgressBar fx:id="shieldBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" progress="1.0" />
             <ProgressBar fx:id="hpBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" progress="0.0" />
+            <ProgressBar fx:id="regeneradorBar" prefWidth="200.0" progress="0.0" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
