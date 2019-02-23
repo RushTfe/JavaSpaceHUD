@@ -70,3 +70,26 @@
 	-fx-background-color: linear-gradient(from 0.0em 0.0em to 12.0em 12.0em, red, yellow, green);
 	-fx-background-radius:0.0;
 }
+
+#regeneradorBar {
+	-fx-background-color: rgba(255.0, 255.0, 255.0, 0.5);
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 1.0;
+	}
+
+#regeneradorBar > .track {
+	-fx-background-color: rgba(255.0, 255.0, 255.0, 0.1);
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 4.0;
+}
+
+#regeneradorBar > .bar {
+    -fx-background-color: linear-gradient(
+        from 0.0px 0.75em to 0.75em 0.0px,
+        repeat,
+        -fx-accent 0.0%,
+        -fx-accent 49.0%,
+        derive(-fx-accent, 30.0%) 50.0%,
+        derive(-fx-accent, 30.0%) 99.0%
+    );
+}
