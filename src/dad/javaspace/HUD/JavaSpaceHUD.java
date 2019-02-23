@@ -86,6 +86,7 @@ public class JavaSpaceHUD extends HBox implements Initializable {
 		hpBar.progressProperty().bind(model.hpProperty());
 		shieldBar.progressProperty().bind(model.shieldProperty());
 		Bindings.bindBidirectional(speedLabel.textProperty(), model.speedProperty(), new NumberStringConverter());
+		regeneradorBar.progressProperty().bind(model.regeneradorProperty());
 		nombreJugador.textProperty().bind(model.nombreJugadorProperty());
 		thrustIndicator.progressProperty().bind(model.thrustProperty());
 			
