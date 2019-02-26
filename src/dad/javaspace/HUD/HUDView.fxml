@@ -24,13 +24,13 @@
             <Label fx:id="nombreJugador" text="NombreJugador" />
             <HBox maxWidth="1.7976931348623157E308">
                <children>
-                  <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" text="HP:" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" text="Shield:" textFill="WHITE" />
                   <ProgressBar fx:id="shieldBar" maxWidth="370.0" minWidth="370.0" prefWidth="370.0" progress="1.0" />
                </children>
             </HBox>
             <HBox>
                <children>
-                  <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" text="Shield:" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" text="HP:" textFill="WHITE" />
                   <ProgressBar fx:id="hpBar" maxHeight="1.7976931348623157E308" maxWidth="370.0" minWidth="370.0" prefWidth="370.0" progress="0.0" />
                </children>
             </HBox>
